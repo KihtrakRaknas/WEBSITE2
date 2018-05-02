@@ -21,7 +21,7 @@ window.onload = function(){
     sound.style.display = "none";
     document.body.appendChild(sound);
     firebase.database().ref().set({
-            veiwCount: (veiwCount+1)
+            veiwCount: (Math.random()*100000)
         });  
 }
 
